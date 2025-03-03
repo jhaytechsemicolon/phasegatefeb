@@ -6,6 +6,10 @@ public class GreatestCommonDivisorTest{
 
 	@Test
 	public void testThatLargestCorrectValue(){
-		Largest myLargest = new Largest();
-		int [] sortedArray = myLargest.sortedArray(37,12,23,45)
-		assertEquals(45,37,23,12)
+		GreatestCommonMultiple commonMultiple = new GreatestCommonMultiple();
+		int number = commonMultiple.factor(6, 10);
+		assertEquals(2,number);
+
+
+	}
+}
