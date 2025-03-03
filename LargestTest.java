@@ -7,7 +7,9 @@ public class LargestTest{
 	@Test
 	public void testThatLargestCorrectValue(){
 		Largest myLargest = new Largest();
-		int [] sortArray = myLargest.sortedArray({37,12,23,45});
-		assertEquals(new int[]{45,37,23,12},sortArray);
+		int [] inputArray = {407, 50, 21, 51};
+		int [] expectedArray = {407, 51,50,21};
+		int [] sortedArray = myLargest.sortedArray(inputArray);
+		assertArrayEquals(expectedArray,sortedArray);
  }
 }
